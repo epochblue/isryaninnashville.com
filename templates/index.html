@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Is Ryan Weaver in Nashville?</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='ryanweaver.css') }}" type="text/css">
+</head>
+<body>
+    <h1>Is Ryan Weaver in Nashville?</h1>
+    <h2>{{ 'Yes!' if in_town else 'No!' }}</h2>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# IDE files
+.idea
+*.iml
+
+# Heroku files
+.env
+
+# Misc
+*.pyc
+*.pyo
