@@ -5,12 +5,9 @@ from functools import wraps
 from flask import Flask, request, render_template, jsonify
 
 
-DATABASE = os.environ.get('DATABASE_URL')
-
-
 app = Flask(__name__)
 token = os.environ.get('RYANWEAVER')
-db = postgres.Postgres(DATABASE)
+db = postgres.Postgres(os.environ.get('DATABASE_URL'))
 
 
 def _is_in_town():
